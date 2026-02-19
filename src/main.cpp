@@ -12,10 +12,9 @@ void display() {
 void setup() {
     matrix.begin(0x70);
     matrix.setBrightness(1);
-    for (int i = 0;i<9;i++) {toggle_led(i,3);}toggle_led(4,1);toggle_led(4,5);toggle_led(5,1);toggle_led(5,5);toggle_led(5,2);toggle_led(5,4);toggle_led(6,2);toggle_led(6,4); // arrow
 }
 void loop() {
-    for (int i = 0;i<9;i++) {toggle_led(i,4);}toggle_led(4,1);toggle_led(4,5);toggle_led(5,1);toggle_led(5,5);toggle_led(5,2);toggle_led(5,4);toggle_led(6,2);toggle_led(6,4); // arrow
+    for (int i = 0;i<9;i++) {toggle_led(i,3);}toggle_led(4,1);toggle_led(4,5);toggle_led(5,1);toggle_led(5,5);toggle_led(5,2);toggle_led(5,4);toggle_led(6,2);toggle_led(6,4); // arrow
     display();
     delay(1000);
 }
